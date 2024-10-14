@@ -1,4 +1,5 @@
 ### GET request to example server
 GET http://localhost:8080/products
+Authorization: Basic user 4f9462fb-c654-4d62-96c9-e14407819ec9
 
 ###
