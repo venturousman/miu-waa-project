@@ -1,0 +1,7 @@
+### GET request to example server
+GET http://localhost:8080/users
+#Authorization: Basic admin@miu.edu 12345
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxLGFkbWluQG1pdS5lZHUsW2FkbWluXSIsImlhdCI6MTcyOTYzMTIxNCwiZXhwIjoxNzI5NjM0ODE0LCJpc3MiOiJNSVUifQ.XbkY4eL_YLlI-tXB33Nmx-l6lk1YzlAy9c6vRPJ8AEc
+#Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyLHVzZXIxQG1pdS5lZHUsW3VzZXJdIiwiaWF0IjoxNzI5NjMxNjM4LCJleHAiOjE3Mjk2MzUyMzgsImlzcyI6Ik1JVSJ9.jgWTmIcyehtDqxduhJJP9HdQZceLHtBsUiC_n5UhstY
+
+###
