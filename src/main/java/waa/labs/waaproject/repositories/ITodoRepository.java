@@ -2,11 +2,11 @@ package waa.labs.waaproject.repositories;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
-import waa.labs.waaproject.models.Product;
+import waa.labs.waaproject.models.Todo;
 
 import java.util.List;
 
 @Repository
-public interface IProductRepository extends CrudRepository<Product, Long> {
-    List<Product> findByName(String name);
+public interface ITodoRepository extends CrudRepository<Todo, Long> {
+//    List<Todo> findByName(String name);
 }

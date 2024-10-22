@@ -1,4 +1,4 @@
 package waa.labs.waaproject.services;
 
-public interface IProductService {
+public interface ITodoService {
 }
