@@ -20,7 +20,7 @@ public class TodoController {
     }
 
     @GetMapping
-    public List<Todo> getTodos() {
+    public List<Todo> getAllTodos() {
         System.out.println("Hello Todos");
         return List.of();
     }

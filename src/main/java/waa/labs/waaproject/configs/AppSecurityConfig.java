@@ -26,13 +26,15 @@ public class AppSecurityConfig {
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http
-                .formLogin(Customizer.withDefaults())
+//                .formLogin(Customizer.withDefaults())
                 .httpBasic(Customizer.withDefaults())
 //                .addFilterAfter(new TenantFilter(), AuthorizationFilter.class) // Adding a Custom Filter to the Filter Chain
                 .authorizeHttpRequests(authorize -> authorize
                                 .requestMatchers("/todos/**").authenticated()
+                                .requestMatchers("/users/**").hasAuthority("admin")
 //                        .anyRequest().permitAll()
                 );
+//                .csrf(csrf -> csrf.disable());
         return http.build();
     }
 
