@@ -25,16 +25,16 @@ public class AppUserDetailsService implements UserDetailsService {
         if (userOptional.isPresent()) {
             User user = userOptional.get();
 
-            List<SimpleGrantedAuthority> authorities = user.getRoles().stream()
-                    .map(SimpleGrantedAuthority::new)
-                    .collect(Collectors.toList());
-
-            UserDetails userDetails = org.springframework.security.core.userdetails.User.builder()
-                    .username(user.getEmail())
-                    .password(user.getPassword())
-                    .authorities(authorities)
-                    .build();
-            return userDetails;
+//            List<SimpleGrantedAuthority> authorities = user.getRoles().stream()
+//                    .map(SimpleGrantedAuthority::new)
+//                    .collect(Collectors.toList());
+//
+//            UserDetails userDetails = org.springframework.security.core.userdetails.User.builder()
+//                    .username(user.getEmail())
+//                    .password(user.getPassword())
+//                    .authorities(authorities)
+//                    .build();
+            return user;
         } else {
             throw new UsernameNotFoundException(email);
         }
